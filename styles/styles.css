@@ -1,11 +1,12 @@
 body {
     background-color: #370617;
+    padding: 20px;
 }
 .yellow__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    justify-items: center;
+    align-items: end;
     height: 100vh;
     margin: 20px;
 }
@@ -49,9 +50,8 @@ body {
     display: row;
     justify-content: space-evenly;
 }
-.e-middle {
-    align-self: center;
-}
+
+
 .red__box_e {
     display: flex;
     justify-content: center;
@@ -61,6 +61,7 @@ body {
     color: white;
     font-family: "Roboto", system-ui;
     font-size: 1vw;
+    padding-bottom: 30px;
 }
 .red__container_f {
     display: flex;
@@ -78,4 +79,9 @@ body {
     border-radius: 5px;
     margin: 10px;
     background-color: #9D0208;
+}
+.e-middle {
+    align-self: center;
+    min-height: 5.5vw; /*Couldn't find a way to shirink this vertically
+    using flexbox.*/
 }
